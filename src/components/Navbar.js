@@ -28,8 +28,8 @@ async function getAddress() {
 function updateButton() {
   const ethereumButton = document.querySelector('.enableEthereumButton');
   ethereumButton.textContent = "Connected";
-  ethereumButton.classList.remove("hover:bg-blue-70");
-  ethereumButton.classList.remove("bg-blue-500");
+  ethereumButton.classList.remove("hover:bg-red");
+  ethereumButton.classList.remove("bg-red");
   ethereumButton.classList.add("hover:bg-green-70");
   ethereumButton.classList.add("bg-green-500");
 }
@@ -72,13 +72,10 @@ async function connectWebsite() {
     return (
       <div className="">
         <nav className="w-screen">
-          <ul className='flex items-end justify-between py-3 bg-transparent text-white pr-5'>
-          <li className='flex items-end ml-5 pb-2'>
+          <ul className='flex items-end justify-between py-12 bg-transparent text-white pr+2'>
+          <li className='flex items-end ml-0 pb-0'>
             <Link to="/">
-            <img src={fullLogo} alt="" width={120} height={120} className="inline-block -mt-2"/> 
-            <div className='inline-block font-bold text-xl ml-2'>
-              NFT Marketplace
-            </div>
+            <img src={fullLogo} alt="" width={350} height={350} className="inline-block -mt-6"/> 
             </Link>
           </li>
           <li className='w-2/6'>
@@ -111,13 +108,13 @@ async function connectWebsite() {
               </li>              
               }  
               <li>
-                <button className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm" onClick={connectWebsite}>{connected? "Connected":"Connect Wallet"}</button>
+                <button className="enableEthereumButton bg-white-100 hover:bg-white-100 text-black font-bold py-2 px-4 rounded text-sm" onClick={connectWebsite}>{connected? "Connected":"Connect Wallet"}</button>
               </li>
             </ul>
           </li>
           </ul>
         </nav>
-        <div className='text-white text-bold text-right mr-10 text-sm'>
+        <div className='text-white text-bold text-right mr-12 text-sm'>
           {currAddress !== "0x" ? "Connected to":"Not Connected. Please login to view NFTs"} {currAddress !== "0x" ? (currAddress.substring(0,15)+'...'):""}
         </div>
       </div>
