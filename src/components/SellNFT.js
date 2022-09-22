@@ -110,7 +110,7 @@ export default function SellNFT () {
                 </div>
                 <br></br>
                 <div className="text-green text-center">{message}</div>
-                <button onClick={listNFT} className="font-bold mt-10 w-full bg-black text-white rounded p-2 shadow-lg">
+                <button onClick={listNFT} className="font-bold mt-10 w-full bg-gradient-to-r bg-clip-text text-transparent text-2xl from-yellow-300 via-purple-400 to-red-500 animate-text rounded p-2 shadow-lg">
                     List NFT
                 </button>
             </form>
