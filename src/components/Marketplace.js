@@ -77,7 +77,7 @@ return (
     <div>
         <Navbar></Navbar>
         <div className="flex flex-col place-items-center mt-20">
-            <div class="text-5xl font-semibold bg-gradient-to-r bg-clip-text text-transparent from-white via-purple-500 to-red-500 animate-text">
+            <div class="text-5xl font-semibold bg-gradient-to-r bg-clip-text text-transparent from-yellow-300 via-purple-400 to-red-500 animate-text">
                 SPOTLIGHT.
             </div> 
             <div className="flex mt-5 justify-between flex-wrap max-w-screen-xl text-center">
