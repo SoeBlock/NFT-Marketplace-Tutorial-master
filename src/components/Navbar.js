@@ -75,10 +75,10 @@ async function connectWebsite() {
           <ul className='flex flex-auto justify-between py-10 px-8 bg-transparent text-white pr+2'>
           <li className='flex items-end ml-0 pb-0'>
             <Link to="/">
-            <img src={fullLogo} alt="" width={350} height={350} className="inline-block -mt-1"/> 
+            <img src={fullLogo} alt="" width={400} height={400} className="inline-block -mt-1"/> 
             </Link>
           </li>
-          <li className='rounded-md box-content h-100 w-100 p-3 border-2 px-4'>
+          <li className='bg-gradient-to-r from-white to-gray-300 text-black rounded-md box-content h-100 w-100 p-3 border-2 px-4'>
             <ul className='lg:flex justify-between font-bold mr-0 text-lg'>
               {location.pathname === "/" ? 
               <li className='border-b-2 hover:pb-0 p-2'>
