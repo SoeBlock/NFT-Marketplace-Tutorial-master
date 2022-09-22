@@ -28,7 +28,18 @@ module.exports = {
     goerli: {
       url: process.env.REACT_APP_ALCHEMY_API_URL,
       accounts: [ process.env.REACT_APP_PRIVATE_KEY ]
-    }
+    },
+
+    /*trustevm: {
+      url: "api.testnet-dev.trust.one",
+      chainId: 15555,
+      accounts: {
+        mnemonic: "test test test test test test test test test test test junk",
+        path: "m/44'/60'/0'/0",
+        initialIndex: 0,
+        count: 20,
+        passphrase: "",
+    }*/
   },
   solidity: {
     version: "0.8.4",
