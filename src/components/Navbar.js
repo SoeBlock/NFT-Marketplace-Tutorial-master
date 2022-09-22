@@ -78,7 +78,7 @@ async function connectWebsite() {
             <img src={fullLogo} alt="" width={400} height={400} className="inline-block -mt-1"/> 
             </Link>
           </li>
-          <li className='bg-gradient-to-r from-white to-gray-300 text-black rounded-md box-content h-100 w-100 p-3 border-2 px-4'>
+          <li className='bg-gradient-to-r from-white via-gray-300 to-gray-400 text-black rounded-lg box-content h-100 w-100 p-3 border-2 px-4'>
             <ul className='lg:flex justify-between font-bold mr-0 text-lg'>
               {location.pathname === "/" ? 
               <li className='border-b-2 hover:pb-0 p-2'>
